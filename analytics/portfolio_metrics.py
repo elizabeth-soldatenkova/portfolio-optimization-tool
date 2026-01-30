@@ -49,6 +49,7 @@ def plot_portfolio_elements(portfolio_elements, title):
 
     plt.tight_layout()
     plt.show()
+    fig.savefig(f"reports/{title.replace(' ', '_').lower()}.png", dpi=300)
 
 def main():
     projects = load_projects(FILE_PATH)
@@ -64,6 +65,7 @@ def main():
 
     plot_portfolio_elements(elements1, 'Portfolio 1')
     plot_portfolio_elements(elements2, 'Portfolio 2')
+
 
 
 if __name__ == "__main__":

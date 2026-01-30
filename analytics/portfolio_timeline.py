@@ -142,6 +142,9 @@ def main():
 
     plt.tight_layout()
     plt.show()
+    fig.savefig("reports/portfolio_timeline.png", dpi=300)
+    fig_table.savefig("reports/portfolio_tables.png", dpi=300)
+
 
 if __name__ == "__main__":
     main()
